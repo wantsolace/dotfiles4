@@ -26,7 +26,7 @@ if ! command -v git &> /dev/null; then
 fi
 
 # Create .config directory if it doesn't exist
-mkdir -p "$HOME/.config"
+mkdir -p "$(dirname "$DOTFILES_DIR")"
 
 # Create .local/share/dotfiles directory
 mkdir -p "$HOME/.local/share/dotfiles"
