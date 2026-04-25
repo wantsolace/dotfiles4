@@ -1,0 +1,15 @@
+# Auto-add keys to the SSH agent on first use and keep them across sessions
+AddKeysToAgent yes
+
+# Use the system keychain/agent for storing passphrases (macOS-style persistence on Linux via gnome-keyring)
+# IdentityFile defaults - covers the most common key types
+IdentityFile ~/.ssh/id_ed25519
+IdentityFile ~/.ssh/id_rsa
+
+# Persist connections to avoid re-authenticating for every git push/pull etc.
+Host *
+  ControlMaster auto
+  ControlPath ~/.ssh/cm_%r@%h:%p
+  ControlPersist 60s
+  ServerAliveInterval 60
+  ServerAliveCountMax 3

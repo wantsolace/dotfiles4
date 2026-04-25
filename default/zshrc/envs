@@ -1,0 +1,5 @@
+export EDITOR=nvim
+export ZSH="$HOME/.oh-my-zsh"
+
+# SSH agent (gcr-ssh-agent via gnome-keyring)
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
