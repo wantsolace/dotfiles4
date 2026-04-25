@@ -3,7 +3,7 @@
 set -e
 
 DOTFILES_DIR="$HOME/.local/share/dotfiles"
-REPO_URL="https://github.com/Maciejonos/dotfiles.git"
+REPO_URL="https://github.com/wantsolace/dotfiles4.git"
 
 echo "=============="
 echo "Dotfiles Setup"
